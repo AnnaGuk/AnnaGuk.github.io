@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urodziny Ani</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="logo">
+          <img src="./assets/myspace.png" />
+          <div>
+            <p><b>OURSPACE</b></p>
+            <span>a place for a party</span>
+          </div>
+        </div>
+        <p class="signature"><b>100 lat Ania!</b></p>
+      </header>
+      <nav class="navigation">
+        <button class="nav-item active" data-tab-value="#profile">Profil</button>
+        <button class="nav-item" data-tab-value="#photos">Fashion Inspiracje</button>
+        <button class="nav-item" data-tab-value="#music">Muzyka</button>
+      </nav>
+      <div class="main active" id="profile" data-tab-info>
+        <div class="column left">
+          <h1>Anna Guk</h1>
+          <div class="profile">
+            <img class="profile-pic" alt="profile picture" src="./assets/ania.png" />
+            <div class="info">
+              <p>&#127874; <i>Solenizantka</i></p>
+              <p>28.06.1989</p>
+              <p>Made in &#127482&#127462;</p>
+              <p>&#128205; Kraków, Polska</p>
+            </div>
+          </div>
+          <div class="contact">
+            <div class="title">Dane kontaktowe</div>
+            <div class="contact-details">
+                <div class="contact-details-column">
+                    <a class="contact-item" href="https://www.instagram.com/anna.the.procrastinator/">
+                        <img alt="instagram" src="./assets/instagram.png"/> Instagram
+                    </a>
+                    <a class="contact-item" href="https://www.facebook.com/flygirl.anna">
+                        <img alt="facebook" src="./assets/facebook.png"/> Facebook
+                    </a>
+                </div>
+                <div class="contact-details-column">                   
+                    <a class="contact-item" href="mailto:guk.anna1989@gmail.com">
+                        <img alt="mail" src="./assets/gmail.png"/> Napisz do mnie
+                    </a>
+                    <a class="contact-item" href="tel:508-185-767">
+                        <img alt="tel" src="./assets/phone.png"/> Zadzwoń do mnie
+                    </a>
+                </div>
+            </div>
+          </div>
+          <div class="interests">
+            <div class="title">Zainteresowania</div>
+            <table class="interests-table" cellspacing="3" cellpadding="3">
+              <tbody>
+                <tr>
+                  <td>Hobby</td>
+                  <td>Koniki &#128014; &#x1F5A4;, podróże &#9992;&#65039;, joga, rewerek &#128690;</td>
+                </tr>
+                <tr>
+                  <td>Książki</td>
+                  <td>Cała seria o Harrym Potterze &#9889;</td>
+                </tr>
+                <tr>
+                  <td>Muzyka</td>
+                  <td>Nu Metal &#127928;, Rap Rock, muzyka z lat 90-2000 &#127908;</td>
+                </tr>
+                <tr>
+                  <td>Ulubione jedzenie</td>
+                  <td>Arbuz &#127817; - mniam!</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="column">
+          <div>
+            <h4>Najnowsze wpisy na blogu</h4>
+            <p>Cześć!</p>
+            <p>28 czerwca wypadają moje urodziny!</p>
+            <p>Zamierzam uczcić to święto organizując imprezę tematyczną w klimacie końca lat 90 - początku lat 2000!</p>
+            <p>Mam nadzieję, że zaszczycisz mnie swoją obecnością!</p>
+            <p>Planuję wyśmienitą zabawę w doborowym towarzystwie, dlatego też nie może Cię zabraknąć!</p>
+          </div>
+          <div>
+            <h4 class="subtitle">
+              Gdzie i kiedy?
+            </h4>
+            <p><b>Data i czas:</b> 01.07.2023, godzina 19:00</p>
+            <p><b>Adres:</b> ul. Pleszowska 29</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d639.9141028314364!2d19.935295669661162!3d50.09271945860235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165a5be7cfab77%3A0x9b399306852b4b18!2sPleszowska%2029%2C%2031-228%20Krak%C3%B3w!5e0!3m2!1spl!2spl!4v1683752081631!5m2!1spl!2spl" width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>Obowiązuje zasada <a href="https://en.wikipedia.org/wiki/BYOB" target="_blank">BYOB</a> ;)</p>
+          </div>
+        </div>
+      </div>
+      <div class="photoalbum" id="photos" data-tab-info>
+        <h3>Modowe trendy z lat 90-2000</h3>
+        <p class="album-description">Zainspirujcie się!</p>
+        <div id="image-thumbs"></div>
+        <img id="current-image" src="./assets/fashion/img1.png" alt="Image 1">
+      </div>
+      <div class="musicpage" id="music" data-tab-info>
+        <h3>Tego posłuchamy na imprezie</h3>
+        <p>... i ne tylko!</p>
+        <div id="songs"></div>
+      </div>
+      <footer>©1989-2023 Anna Guk. All Rights Reserved.</footer>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

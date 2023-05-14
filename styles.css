@@ -1,0 +1,279 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: verdana, arial, sans-serif, helvetica;
+  background-color: #e3e3e3;
+}
+
+.container {
+  width: 875px;
+  max-width: 100%;
+  margin: 0 auto 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #043d99;
+  color: white;
+  padding: 10px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media only screen and (max-width: 600px) {
+    padding: 10px;
+  }
+}
+
+.signature {
+  font-size: 150%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo p {
+  margin: 0;
+}
+
+.logo span {
+  font-size: 80%;
+}
+
+.navigation {
+  padding: 3.5px 16px 5.5px 16px;
+  background-color: #60a5fa;
+}
+
+.nav-item {
+  font-size: max(0.98em, 12px);
+  border: none;
+  color: white;
+  cursor: pointer;
+  text-shadow: 0 0 7px #095dc3;
+  background-color: #60a5fa;
+  padding: 0;
+}
+
+.nav-item:hover {
+  color: black;
+}
+
+.nav-item::after {
+  content: " | ";
+  color: black;
+}
+
+.nav-item.active {
+  font-weight: bold;
+}
+
+[data-tab-info] {
+  display: none;
+}
+
+.active[data-tab-info] {
+  display: block;
+}
+
+.main.active[data-tab-info] {
+  background: white;
+  color: black;
+  padding: 6px 0px;
+  font-size: 80%;
+  min-height: 600px;
+  display: table;
+  table-layout: fixed;
+
+  @media only screen and (max-width: 600px) {
+    display: block;
+  }
+}
+
+.column {
+  display: table-cell;
+  vertical-align: top;
+  padding: 10px;
+  border-color: red;
+
+  @media only screen and (max-width: 600px) {
+    display: block;
+  }
+}
+
+.left {
+  width: 40%;
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
+}
+
+h1 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.profile {
+  display: flex;
+}
+
+.profile-pic {
+  height: 300px;
+}
+
+.info {
+  padding-left: 12px;
+}
+
+.contact {
+  border: 2px solid #60a5fa;
+  margin: 10px 0;
+}
+
+.title {
+  background-color: #60a5fa;
+  color: white;
+  font-weight: bold;
+  padding: 2px 7px;
+}
+
+.contact-details {
+  display: flex;
+}
+
+.contact-details-column {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.contact-item {
+  margin: 7px;
+  font-weight: bold;
+  font-size: 12px;
+  text-decoration: none;
+  color: #1e40af;
+}
+
+.contact-item img {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+}
+
+.interests {
+  border: 2px solid #60a5fa;
+  margin: 10px 0;
+}
+
+.interests-table {
+  width: 100%;
+}
+
+.interests-table td:first-of-type {
+  background-color: #bfdbfe;
+  color: #1d4ed8;
+  font-weight: bold;
+  width: 33%;
+}
+
+.interests-table td {
+  background-color: #dbeafe;
+}
+
+.subtitle {
+  background: #f9c56c;
+  color: #ed0707;
+  padding: 2px 7px;
+}
+
+.photoalbum,
+.musicpage {
+  background-color: white;
+  min-height: 600px;
+  padding: 6px;
+}
+
+.photoalbum h3,
+.album-description,
+.musicpage h3,
+.musicpage p {
+  text-align: center;
+}
+
+#image-gallery {
+  width: 600px;
+  margin: 0 auto;
+}
+
+#current-image {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media only screen and (max-width: 600px) {
+    width: 80%;
+  }
+}
+
+#image-thumbs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.thumb {
+  width: 80px;
+  object-fit: cover;
+  margin: 10px 5px;
+  cursor: pointer;
+
+  @media only screen and (max-width: 600px) {
+    width: 40px;
+  }
+}
+
+#songs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.songbox {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 10px;
+
+  @media only screen and (max-width: 600px) {
+    width: 100%;
+  }
+}
+
+.songbox audio {
+  width: auto;
+  padding-top: 5px;
+}
+
+footer {
+  text-align: center;
+  font-size: 70%;
+  padding: 10px 5px;
+  margin-top: auto;
+}
