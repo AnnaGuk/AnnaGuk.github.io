@@ -16,8 +16,7 @@ body {
 }
 
 .container {
-  width: 875px;
-  max-width: 100%;
+  width: 75vw;
   margin: 0 auto 10px;
   display: flex;
   flex-direction: column;
@@ -30,10 +29,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  @media only screen and (max-width: 600px) {
-    padding: 10px;
-  }
 }
 
 .signature {
@@ -97,10 +92,6 @@ body {
   min-height: 600px;
   display: table;
   table-layout: fixed;
-
-  @media only screen and (max-width: 600px) {
-    display: block;
-  }
 }
 
 .column {
@@ -108,18 +99,10 @@ body {
   vertical-align: top;
   padding: 10px;
   border-color: red;
-
-  @media only screen and (max-width: 600px) {
-    display: block;
-  }
 }
 
 .left {
   width: 40%;
-
-  @media only screen and (max-width: 600px) {
-    width: 100%;
-  }
 }
 
 h1 {
@@ -225,10 +208,6 @@ h1 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-
-  @media only screen and (max-width: 600px) {
-    width: 80%;
-  }
 }
 
 #image-thumbs {
@@ -243,10 +222,6 @@ h1 {
   object-fit: cover;
   margin: 10px 5px;
   cursor: pointer;
-
-  @media only screen and (max-width: 600px) {
-    width: 40px;
-  }
 }
 
 #songs {
@@ -260,10 +235,6 @@ h1 {
   flex-direction: column;
   width: 50%;
   padding: 10px;
-
-  @media only screen and (max-width: 600px) {
-    width: 100%;
-  }
 }
 
 .songbox audio {
@@ -276,4 +247,32 @@ footer {
   font-size: 70%;
   padding: 10px 5px;
   margin-top: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    padding: 10px;
+  }
+
+  .container {
+    width: 100vw;
+  }
+
+  .main.active[data-tab-info],
+  .column {
+    display: block;
+  }
+
+  .left,
+  .songbox {
+    width: 100%;
+  }
+
+  #current-image {
+    width: 80%;
+  }
+
+  .thumb {
+    width: 40px;
+  }
 }
